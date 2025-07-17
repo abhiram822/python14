@@ -1,2 +1,17 @@
 # python14
-print even or odd without using modulo(%)
+#print even or odd without using modulo(%)
+def one(n):
+    if n==0:
+        return True
+    else:
+        return two(n-1)
+def two(n):
+     if n==0:
+        return False
+     else:
+        return one(n-1)
+num=int(input())
+if one(num):
+    print(num,"is even")
+else:
+    print(num,"is odd")
